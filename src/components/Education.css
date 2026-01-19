@@ -1,0 +1,120 @@
+.education-section {
+  padding: 80px 0;
+  /* Dark gradient background similar to hero */
+  background: radial-gradient(circle at top left, #0f172a 0%, #020617 55%, #000000 100%);
+  color: #e5e7eb;
+}
+
+/* Section title */
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #f9fafb;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Timeline wrapper */
+.timeline {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  position: relative;
+  gap: 20px;
+}
+
+/* Columns (Education / Certifications) */
+.timeline-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* more space between High School, Intermediate, B.Tech, etc. [web:18][web:21] */
+}
+
+/* Column headings */
+.column-title {
+  font-size: 1.6rem;
+  color: #22d3ee;
+  margin-bottom: 12px;
+}
+
+/* Center vertical line with glow */
+.timeline-line {
+  width: 3px;
+  background: linear-gradient(to bottom, #22d3ee, #0ea5e9);
+  margin: 0 auto;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.55);
+}
+
+/* Each item wrapper */
+.timeline-item {
+  position: relative;
+}
+
+/* Dots with subtle glow */
+.timeline-dot {
+  position: absolute;
+  top: 25px;
+  width: 14px;
+  height: 14px;
+  background: #22d3ee;
+  border-radius: 50%;
+  left: -32px;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.7);
+}
+
+.timeline-column:last-child .timeline-dot {
+  left: auto;
+  right: -32px;
+}
+
+/* Cards (dark theme) */
+.timeline-card {
+  background: rgba(15, 23, 42, 0.95);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  transition: all 0.3s ease;
+}
+
+/* Softer hover glow */
+.timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(56, 189, 248, 0.28); /* subtle glow [web:25][web:31] */
+}
+
+/* Text inside cards */
+.timeline-year {
+  font-size: 0.9rem;
+  color: #22d3ee;
+  font-weight: 600;
+}
+
+.timeline-card h4 {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  color: #e5e7eb;
+}
+
+.timeline-card p {
+  font-size: 0.95rem;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+}

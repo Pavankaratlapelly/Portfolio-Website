@@ -1,0 +1,12 @@
+.page-section {
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #071f2e;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+

@@ -1,0 +1,38 @@
+.custom-navbar {
+  background: linear-gradient(135deg, #061826, #0b2b3c);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+.nav-link {
+  color: #cfd8dc !important;
+  font-size: 1.05rem;
+  margin-left: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00d9ff !important;
+}
+
+/* Active link effect */
+.active-link {
+  color: #00d9ff !important;
+  font-weight: 600;
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #00d9ff;
+  border-radius: 2px;
+}
+

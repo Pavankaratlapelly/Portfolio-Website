@@ -1,0 +1,150 @@
+/* ===== EXISTING SECTION & LAYOUT ===== */
+
+.home-section {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b2b3c, #04161f);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.home-text {
+  max-width: 600px;
+}
+
+.home-name {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.home-name span {
+  color: #00d9ff;
+}
+
+/* ===== REQUIRED FULL STACK EFFECT ===== */
+
+.home-role {
+  margin: 15px 0;
+}
+
+.outline-text {
+  font-size: 2.3rem;
+  font-weight: 700;
+
+  color: transparent;
+  -webkit-text-stroke: 1.5px #00d9ff;
+
+  transition: all 0.4s ease;
+}
+
+/* TRANSPARENT HOVER LIKE IMAGE */
+.outline-text:hover {
+  color: rgba(0, 217, 255, 0.15);
+}
+
+/* ===== EXISTING DESCRIPTION ===== */
+
+.home-desc {
+  margin: 20px 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #cfd8dc;
+}
+
+/* ===== REQUIRED BUTTON ===== */
+
+.talk-btn {
+  display: block;
+  margin: 15px auto 0;   /* CENTER BUTTON */
+  padding: 12px 32px;
+  border-radius: 30px;
+  border: 2px solid #00d9ff;
+  color: #00d9ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+
+.talk-btn:hover {
+  background: #00d9ff;
+  color: #02131b;
+}
+
+/* ===== REQUIRED ICONS ===== */
+
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  background: #00d9ff;
+  color: #02131b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: transparent;
+  color: #00d9ff;
+  border: 2px solid #00d9ff;
+}
+
+/* ===== IMAGE (UNCHANGED) ===== */
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-glow {
+  padding: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00d9ff, #005f73);
+  box-shadow: 0 0 40px rgba(0, 217, 255, 0.6);
+}
+
+.image-glow img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+  .home-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+
+ .social-icons {
+  /* margin: 25px auto 0; */
+  margin-left: 500px;   /* THIS is the key */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: fit-content;    /* shrink to icons width */
+}
+
+
+}

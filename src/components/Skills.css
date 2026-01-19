@@ -1,0 +1,121 @@
+.skills-section {
+  padding: 60px 0; /* much smaller padding */
+  background: radial-gradient(circle at top left, #0f172a 0%, #020617 55%, #000000 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.skills-container {
+  max-width: 900px; /* wider container */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.4rem; /* even smaller */
+  color: #f9fafb;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 28px; /* tighter */
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px; /* thinner */
+  background: linear-gradient(90deg, #22d3ee, #0ea5e9);
+  margin: 12px auto 0;
+  border-radius: 1px;
+}
+
+/* Compact skill list */
+.skills-list {
+  background: rgba(15, 23, 42, 0.95);
+  padding: 28px; /* smaller padding */
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Very tight spacing */
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* center align */
+  margin-bottom: 12px; /* minimal */
+  padding: 8px 0; /* minimal */
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12); /* fainter */
+  transition: all 0.3s ease;
+}
+
+.skill-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.skill-item:hover {
+  transform: translateX(6px); /* smaller hover */
+  border-color: rgba(34, 211, 238, 0.25);
+}
+
+/* Compact text */
+.skill-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  min-width: 200px; /* slightly narrower */
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.skill-value {
+  font-size: 1rem;
+  color: #22d3ee;
+  font-weight: 500;
+  padding-left: 24px; /* tighter */
+  text-align: left;
+  flex: 1;
+}
+
+/* Mobile - still fits */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 40px 0;
+  }
+
+  .skills-container {
+    padding: 0 16px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skills-list {
+    padding: 24px 16px;
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 10px;
+    padding: 6px 0;
+  }
+
+  .skill-label {
+    min-width: auto;
+    font-size: 1rem;
+  }
+
+  .skill-value {
+    padding-left: 0;
+    font-size: 0.95rem;
+  }
+}
