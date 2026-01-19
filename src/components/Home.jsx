@@ -31,7 +31,7 @@ function Home() {
           </p>
         
           {/* REQUIRED BUTTON */}
-          <a href="#ContactUs" className="talk-btn">
+          <a href="#ContactMe" className="talk-btn">
             Contact Me
           </a>
 
